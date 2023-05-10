@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: 'https://github.com/alperkrtglu/test-manifest'
     targetRevision: HEAD
-    path: k8s/manifests
+    path: service
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: my-namespace
