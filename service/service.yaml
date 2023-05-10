@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/my-user/my-repo.git'
+    repoURL: 'https://github.com/alperkrtglu/test-manifest'
     targetRevision: HEAD
     path: k8s/manifests
   destination:
