@@ -16,6 +16,12 @@ spec:
         replicaCount: 3
         deleteTopicEnable: true
         autoCreateTopicsEnable: true
+        zookeeper:
+          auth:
+            enabled: true
+            existingSecret: ""
+            password: password
+        kafkaPassword: password
   destination:
     server: https://kubernetes.default.svc
     namespace: infra
