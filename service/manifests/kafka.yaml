@@ -12,7 +12,7 @@ spec:
     helm:
       values: |-
         global:
-          storageClass: standard
+          storageClass: ceph-filesystem
         replicaCount: 1
         deleteTopicEnable: true
         autoCreateTopicsEnable: true
