@@ -1,0 +1,24 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: kafka
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: 'https://charts.bitnami.com/bitnami'
+    chart: kafka
+    targetRevision: 14.3.3
+    helm:
+      values: |-
+        global:
+          storageClass: standard
+        replicaCount: 3
+        deleteTopicEnable: true
+        autoCreateTopicsEnable: true
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: infra
+  syncPolicy:
+    automated:
+      prune: true
