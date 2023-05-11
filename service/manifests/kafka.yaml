@@ -13,7 +13,7 @@ spec:
       values: |-
         global:
           storageClass: standard
-        replicaCount: 3
+        replicaCount: 1
         deleteTopicEnable: true
         autoCreateTopicsEnable: true
         zookeeper:
