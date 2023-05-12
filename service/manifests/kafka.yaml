@@ -13,7 +13,7 @@ spec:
       values: |-
         global:
           storageClass: ceph-filesystem
-        replicaCount: 1
+        replicaCount: 2
         deleteTopicEnable: true
         autoCreateTopicsEnable: true
         zookeeper:
