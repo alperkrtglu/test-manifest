@@ -24,7 +24,7 @@ spec:
         kafkaPassword: password
   destination:
     server: https://kubernetes.default.svc
-    namespace: infra
+    namespace: default
   syncPolicy:
     automated:
       prune: true
