@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: jaeger
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: 'https://raw.githubusercontent.com/hansehe/jaeger-all-in-one/master/helm/charts'
+    chart: jaeger-all-in-one
+    targetRevision: 0.1.11
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true
