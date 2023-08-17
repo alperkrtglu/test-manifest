@@ -1,7 +1,8 @@
 apiVersion: jaegertracing.io/v1
 kind: Jaeger
 metadata:
-  name: simple-prod
+  name: jaeger
+  namespace: argocd
 spec:
   strategy: production
   storage:
