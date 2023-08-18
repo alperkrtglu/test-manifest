@@ -6,9 +6,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/jaegertracing/jaeger-operator.git
+    repoURL: https://github.com/jaegertracing/helm-charts
     targetRevision: HEAD  # or a specific version/tag
-    path: bundle/manifests
+    path: charts/jaeger-operator
   destination:
     server: https://kubernetes.default.svc
     namespace: observability
