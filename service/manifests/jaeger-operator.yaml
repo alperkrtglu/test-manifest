@@ -7,7 +7,8 @@ spec:
   project: default
   source:
     repoURL: https://github.com/jaegertracing/jaeger-operator.git
-    targetRevision: main  # or a specific version/tag
+    targetRevision: HEAD  # or a specific version/tag
+    path: bundle/manifests
   destination:
     server: https://kubernetes.default.svc
     namespace: observability
