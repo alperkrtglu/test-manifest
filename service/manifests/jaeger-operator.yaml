@@ -11,7 +11,7 @@ spec:
     path: deploy  # this should be the directory containing operator's manifests
   destination:
     server: https://kubernetes.default.svc
-    namespace: observability
+    namespace: default
   syncPolicy:
     automated:
       prune: true
